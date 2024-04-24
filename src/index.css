@@ -4,6 +4,9 @@
 
 @layer base {
   .paperWarp {
-    @apply w-screen h-screen bg-slate-800 px-10 py-4
+    @apply w-screen h-screen bg-slate-800 px-10 py-4;
+  }
+  a {
+    @apply mx-4 text-xl border-b-2 hover:text-slate-300;
   }
 }

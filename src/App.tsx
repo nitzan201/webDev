@@ -1,14 +1,13 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Outlet } from "react-router-dom";
+import { TopBar } from "./layout/TopBar";
 
 function App() {
   return (
     <div className="paperWarp ">
-      <header>Workout tracker </header>
+      <header className="text-white text-2xl">Workout tracker </header>
       <main>
+        <TopBar />
         <Outlet />
-        <Button variant={"outline"}>Click me</Button>
       </main>
       <footer></footer>
     </div>
